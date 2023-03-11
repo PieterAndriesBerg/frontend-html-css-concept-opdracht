@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap');
 /*////////////////////////
     Table of Contents
     1. Global Styles
+        1.1 Colors
     2. Typography
     3. Layout
         3.1 Reusables
@@ -13,10 +15,46 @@
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+/* ------------------------------- 1.1 Colors ------------------------------------------ */
+
+:root {
+    --purple: #5722CD;
+    --blue:   #4845E4;
+    --pink:   #ED4385;
+    --text-color:   #0C0C0C;
+    --light-purple: #F2F0FF;
+    --light-gray:   #F3F6F9;
+    --gray:         #7A7A7A;
+
+
+}
 
 /* ------------------------------- 2. Typography ----------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Merriweather", sans-serif;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    color: inherit;
+}
 
 /* ------------------------------- 3. Layout --------------------------------------- */
+
+
+
+
 
 /* --------------- 3.1 Reusables ----------------------- */
 
@@ -25,6 +63,58 @@
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--purple);
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+.header-nav {
+    align-self: flex-end;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 25px;
+    margin-right: 100px;
+}
+
+.header-cta {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    width: 75%;
+}
+
+.header-cta p {
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.header-button-cta {
+    color: white;
+    padding: 20px;
+    width: 224px;
+    border-radius: 26px;
+    border: none;
+    background-color: var(--pink);
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+
+}
 
 /* --------------- 4.2 Introduction ------------------- */
 
