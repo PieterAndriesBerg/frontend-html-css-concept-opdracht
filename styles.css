@@ -69,7 +69,7 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: var(--purple);
+    background-image: radial-gradient(circle, #4845e4, #564de6, #6356e9, #6e5eeb, #7967ed);
 }
 
 header h1 {
@@ -114,6 +114,13 @@ header h1 {
     background-color: var(--pink);
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 
+}
+
+.header-icon {
+    margin-top: 90px;
+    width: 75px;
+    height: 100px;
+    background: url("./assets/squiggle_line_stripe.svg") no-repeat ;
 }
 
 /* --------------- 4.2 Introduction ------------------- */
