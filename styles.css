@@ -47,13 +47,10 @@ body {
 }
 
 a {
-    color: inherit;
+    color: var(--purple);
 }
 
 /* ------------------------------- 3. Layout --------------------------------------- */
-
-
-
 
 
 /* --------------- 3.1 Reusables ----------------------- */
@@ -70,6 +67,10 @@ header {
     align-items: center;
     color: white;
     background-image: radial-gradient(circle, #4845e4, #564de6, #6356e9, #6e5eeb, #7967ed);
+}
+
+header a {
+    color: inherit;
 }
 
 header h1 {
@@ -117,12 +118,31 @@ header h1 {
 }
 
 .header-icon {
-    margin-top: 90px;
+    margin-top: 75px;
     width: 75px;
     height: 100px;
     background: url("./assets/squiggle_line_stripe.svg") no-repeat ;
 }
 
 /* --------------- 4.2 Introduction ------------------- */
+
+.business-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.business-flex-container h2 {
+    color: var(--purple);
+}
+
+.business-flex-container p {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
