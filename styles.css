@@ -35,6 +35,7 @@
     --light-purple: #F2F0FF;
     --light-gray:   #F3F6F9;
     --gray:         #7A7A7A;
+    --gradient: radial-gradient(circle, #4845e4, #564de6, #6356e9, #6e5eeb, #7967ed);
 
 
 }
@@ -67,7 +68,7 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
-    background-image: radial-gradient(circle, #4845e4, #564de6, #6356e9, #6e5eeb, #7967ed);
+    background-image: var(--gradient);
 }
 
 header a {
@@ -225,7 +226,7 @@ img {
     gap: 25px;
     justify-content: center;
     margin: 100px 100px 50px 100px;
-    flex-basis: 50%;
+    flex-basis: 70%;
 
 }
 
@@ -252,6 +253,79 @@ img {
 .services-wrapper article img {
     width: 70px;
 }
+
+/* --------------- 4.5 Contact Form and Footer ------------------- */
+
+.section-contact-form {
+    background: var(--gradient);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-wrapper {
+    padding: 100px 150px 150px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-form-wrapper p {
+    font-weight: lighter;
+}
+
+.contact-form-wrapper h2 {
+    font-size: 36px;
+
+}
+
+.form-message {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    width: 800px;
+    gap: 50px;
+}
+
+.form-message input {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+}
+
+.form-message textarea {
+    border: none;
+    border-radius: 3px;
+}
+
+.form-message button {
+    width: 25%;
+    background-color: var(--pink);
+    border: none;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-self: center;
+}
+
+.footer-wrapper {
+    background-color: #0C0C0C;
+    color: white;
+    font-weight: lighter;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
