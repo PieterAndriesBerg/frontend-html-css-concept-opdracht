@@ -175,6 +175,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 .work-article-container a {
@@ -211,6 +212,11 @@ img {
 
 /* --------------- 4.4 Services Section  ------------------- */
 
+.services-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .services-wrapper {
     display: flex;
@@ -218,7 +224,8 @@ img {
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
-    margin: 100px 100px 0 100px;
+    margin: 100px 100px 50px 100px;
+    flex-basis: 50%;
 
 }
 
@@ -226,8 +233,8 @@ img {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--purple);
-    padding: 40px;
-    gap: 26px;
+    padding: 30px;
+    gap: 15px;
     flex-basis: 300px;
 }
 
@@ -239,10 +246,11 @@ img {
 
 .services-wrapper article h4 {
     color: var(--purple);
+    font-size: 17px;
 }
 
 .services-wrapper article img {
-    width: 60px;
+    width: 70px;
 }
 
 
